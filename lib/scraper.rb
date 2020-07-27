@@ -35,18 +35,22 @@ class Scraper
       twitter = array.find{|x| x[/twitter/]}
       linkedin = array.find{|x| x[/linkedin/]}
       github = array.find{|x| x[/github/]}
-      blog = array.find{|x| !x[/twitter/] && !x[/linkedin/] && !x[/github/]} unless array == nil
+      blog = array.find{|x| !x[/twitter/] && !x[/linkedin/] && !x[/github/]} 
       profile_quote = scrape.css(".vitals-text-container").css("div.profile-quote").text
       bio = scrape.css(".description-holder").css("p").text
 
-      profile_hash ={
-        :twitter => twitter,
-        :linkedin => linkedin,
-        :github => github,
-        :blog => blog,
-        :profile_quote => profile_quote,
-        :bio => bio
-      }
+      # profile_hash ={
+      #   :twitter => twitter,
+      #   :linkedin => linkedin,
+      #   :github => github,
+      #   :blog => blog,
+      #   :profile_quote => profile_quote,
+      #   :bio => bio
+      # }
+      profile_hash ={}
+      if twitter != nil then profile_hash[":twitter"] = twitter
+      end
+      if linkedin != nil then profile_hash[":linkedin"] = linkedin
 
     profile_hash
   end
