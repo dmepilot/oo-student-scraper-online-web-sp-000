@@ -19,6 +19,14 @@ class Student
       end
       if k == :linkedin then k = self.linkedin
       end
+      if k == :github then k = self.github
+      end
+      if k == :blog then k = self.blog
+      end
+      if k == :profile_quote then k = self.profile_quote
+      end
+      if k == :bio then k = self.bio
+      end
     end
   end
 
