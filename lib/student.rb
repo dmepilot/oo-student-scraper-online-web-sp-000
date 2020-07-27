@@ -15,17 +15,17 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |k, v|
-      if k == :twitter then k = self.twitter
+      if k == :twitter then self.twitter = v
       end
-      if k == :linkedin then k = self.linkedin
+      if k == :linkedin then self.linkedin = v
       end
-      if k == :github then k = self.github
+      if k == :github then self.github = v
       end
-      if k == :blog then k = self.blog
+      if k == :blog then self.blog = v
       end
-      if k == :profile_quote then k = self.profile_quote
+      if k == :profile_quote then self.profile_quote = v
       end
-      if k == :bio then k = self.bio
+      if k == :bio then self.bio = v
       end
     end
   end
