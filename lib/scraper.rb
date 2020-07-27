@@ -39,6 +39,15 @@ class Scraper
       profile_quote = scrape.css(".vitals-text-container").css("div.profile-quote").text
       bio = scrape.css(".description-holder").css("p").text
 
+      profile_hash ={
+        :twitter => twitter,
+        :linkedin => linkedin,
+        :github => github,
+        :blog => blog,
+        :profile_quote => profile_quote,
+        :bio => bio
+      }
+
     binding.pry
   end
 
