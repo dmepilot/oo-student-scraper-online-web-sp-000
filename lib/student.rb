@@ -16,6 +16,7 @@ class Student
     # @profile_url = profile_url
 
     student_hash.each{|key, value| self.send(("#{key}="), value)}
+    @@all << self
 
   end
 
