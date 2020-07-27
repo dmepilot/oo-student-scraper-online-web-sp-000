@@ -48,7 +48,7 @@ class Scraper
       #   :bio => bio
       # }
       profile_hash ={}
-      if twitter != nil then profile_hash[:twitter] = twitter
+      if twitter then profile_hash[:twitter] = twitter
       end
       if linkedin != nil then profile_hash[:linkedin] = linkedin
       end
