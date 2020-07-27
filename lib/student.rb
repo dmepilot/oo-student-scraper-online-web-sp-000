@@ -15,6 +15,8 @@ class Student
     @bio = bio
     @profile_url = profile_url
 
+    student_hash.each 
+
   end
 
   def self.create_from_collection(students_array)
