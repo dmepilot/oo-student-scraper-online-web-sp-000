@@ -9,7 +9,7 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(students_array)
+  def self.create_from_collection(students_array)#passes in a hash from scraper.rb with name, location, and profile 
     students_array.each{|student| student=Student.new}
   end
 
