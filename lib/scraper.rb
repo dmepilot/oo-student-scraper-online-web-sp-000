@@ -51,6 +51,10 @@ class Scraper
       if twitter != nil then profile_hash[":twitter"] = twitter
       end
       if linkedin != nil then profile_hash[":linkedin"] = linkedin
+      end
+      if github != nil then profile_hash[":github"] = github
+      end
+      if blog != nil then profile_hash[":blog"] = blog
 
     profile_hash
   end
