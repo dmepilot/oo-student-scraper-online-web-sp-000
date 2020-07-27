@@ -48,7 +48,7 @@ class Scraper
         :bio => bio
       }
 
-    binding.pry
+    profile_hash
   end
 
 end
