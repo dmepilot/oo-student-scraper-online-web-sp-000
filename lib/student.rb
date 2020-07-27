@@ -15,7 +15,10 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |k, v|
-      self.k = v
+      if k == :twitter then k = self.twitter
+      end
+      if k == :linkedin then k = self.linkedin
+      end
     end
   end
 
