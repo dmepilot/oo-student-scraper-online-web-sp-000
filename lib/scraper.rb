@@ -35,7 +35,7 @@ class Scraper
       twitter = array.find{|x| x[/twitter/]}
       linkedin = array.find{|x| x[/linkedin/]}
       github = array.find{|x| x[/github/]}
-      blog = array.find{|x| !x[/twitter/] && !x[/linkedin/] && !x[/github/] && x != nil}
+      blog = array.find{|x| !x[/twitter/] && !x[/linkedin/] && !x[/github/]} unless array == nil
       profile_quote = scrape.css(".vitals-text-container").css("div.profile-quote").text
       bio = scrape.css(".description-holder").css("p").text
 
