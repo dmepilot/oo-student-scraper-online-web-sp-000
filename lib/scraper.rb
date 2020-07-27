@@ -48,17 +48,17 @@ class Scraper
       #   :bio => bio
       # }
       profile_hash ={}
-      if twitter != nil then profile_hash[":twitter"] = twitter
+      if twitter != nil then profile_hash[:twitter] = twitter
       end
-      if linkedin != nil then profile_hash[":linkedin"] = linkedin
+      if linkedin != nil then profile_hash[:linkedin] = linkedin
       end
-      if github != nil then profile_hash[":github"] = github
+      if github != nil then profile_hash[:github] = github
       end
-      if blog != nil then profile_hash[":blog"] = blog
+      if blog != nil then profile_hash[:blog] = blog
       end
-      if profile_quote != nil then profile_hash[":profile_quote"] = profile_quote
+      if profile_quote != nil then profile_hash[:profile_quote] = profile_quote
       end
-      if bio != nil then profile_hash[":bio"] = bio
+      if bio != nil then profile_hash[:bio] = bio
       end
 
     profile_hash
